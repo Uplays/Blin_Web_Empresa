@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blin - Experiencia de Sistema</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Estados Principales -->
+    <input type="radio" id="state-login" name="sys-state" checked hidden>
+    <input type="radio" id="state-tour" name="sys-state" hidden>
+
+    <!-- Pasos del Tour -->
+    <input type="radio" id="step-1" name="tour-step" checked hidden>
+    <input type="radio" id="step-2" name="tour-step" hidden>
+    <input type="radio" id="step-3" name="tour-step" hidden>
+    <input type="radio" id="step-4" name="tour-step" hidden>
+    <input type="radio" id="step-5" name="tour-step" hidden>
+
+    <!-- Estados de Usuario -->
+    <input type="radio" id="user-alex" name="active-user" checked hidden>
+    <input type="radio" id="user-guest" name="active-user" hidden>
+
+    <div class="main-wrapper">
+        <!-- PANTALLA DE LOGIN (Fake Login) -->
+        <section id="login-screen" class="glass-bg">
+            <div class="login-content">
+                <div class="login-header">
+                    <img src="assets/logo.png" alt="Blin Logo" class="login-logo">
+                    <h1 class="login-title">Blin</h1>
+                </div>
+
+                <div class="user-selector">
+                    <label for="user-alex" class="user-card">
+                        <div class="avatar alex"></div>
+                        <span>Vicent</span>
+                    </label>
+                    <label for="user-guest" class="user-card">
+                        <div class="avatar guest"></div>
+                        <span>Invitado</span>
+                    </label>
+                </div>
+
+                <div class="login-form">
+                    <input type="password" placeholder="Contraseña" class="login-input">
+                    <div class="login-actions">
+                        <label for="state-tour" class="btn-login">Entrar</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRESENTACIÓN INTERACTIVA -->
+        <section id="presentation-screen">
+            <div class="layers-container">
+                <div class="layers-stack">
+                    <!-- Nivel 1: Entorno -->
+                    <div class="layer l1-env">
+                        <div class="bg-visual"></div>
+                        <div class="layer-tag">NIVEL 01</div>
+                    </div>
+
+                    <!-- Nivel 2: Shell -->
+                    <div class="layer l2-shell">
+                        <div class="shell-layout">
+                            <div class="top-bar glass">
+                                <img src="assets/logo.png" alt="Small Logo" class="bar-logo">
+                                <div class="bar-center">
+                                    <span class="bar-text">SISTEMA BLIN</span>
+                                    <span class="bar-status">● ACTIVO</span>
+                                </div>
+                                <div class="bar-right">
+                                    <span class="bar-time">12:42</span>
+                                    <span class="bar-icon">📶</span>
+                                    <span class="bar-icon">🔋</span>
+                                </div>
+                            </div>
+                            <div class="fake-dock glass">
+                                <div class="dock-dot browser">🌐</div>
+                                <div class="dock-dot files active">📁</div>
+                                <div class="dock-dot settings">⚙️</div>
+                                <div class="dock-dot ai">🤖</div>
+                            </div>
+                        </div>
+                        <div class="layer-tag">NIVEL 02</div>
+                    </div>
+
+                    <!-- Nivel 3: Gestión de Usuarios -->
+                    <div class="layer l3-users">
+                        <div class="panel glass">
+                            <div class="panel-head">
+                                <h3>Gestión de Perfiles</h3>
+                                <div class="user-switcher">
+                                    <label for="user-alex" class="switch-btn">Vicent</label>
+                                    <label for="user-guest" class="switch-btn">Invitado</label>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="user-info-compact">
+                                    <div class="user-avatar-medium alex"></div>
+                                    <div class="user-details-compact">
+                                        <h4>Vicent</h4>
+                                        <span class="user-role">Administrador</span>
+                                    </div>
+                                </div>
+                                <div class="perms-compact">
+                                    <label class="perm-item">
+                                        <input type="checkbox" checked>
+                                        <span class="check-box"></span>
+                                        <span class="perm-text">Gestionar archivos</span>
+                                    </label>
+                                    <label class="perm-item">
+                                        <input type="checkbox" checked>
+                                        <span class="check-box"></span>
+                                        <span class="perm-text">Instalar apps</span>
+                                    </label>
+                                    <label class="perm-item">
+                                        <input type="checkbox" checked>
+                                        <span class="check-box"></span>
+                                        <span class="perm-text">Acceso total</span>
+                                    </label>
+                                    <label class="perm-item">
+                                        <input type="checkbox">
+                                        <span class="check-box"></span>
+                                        <span class="perm-text">Modo invitado</span>
+                                    </label>
+                                </div>
+                                <div class="panel-actions">
+                                    <button class="btn-apply">Aplicar Cambios</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layer-tag">NIVEL 03</div>
+                    </div>
+
+                    <!-- Nivel 4: Workspace -->
+                    <div class="layer l4-work">
+                        <div class="window glass w1">
+                            <div class="w-head"><span></span><span></span><span></span></div>
+                            <div class="w-body">
+                                <h4>Proyectos de Diseño</h4>
+                                <p>Renderizando capas 3D...</p>
+                            </div>
+                        </div>
+                        <div class="window glass w2">
+                            <div class="w-head"><span></span><span></span><span></span></div>
+                            <div class="w-body">
+                                <h4>Blin.pdf</h4>
+                                <p>Arquitectura optimizada.</p>
+                            </div>
+                        </div>
+                        <div class="layer-tag">NIVEL 04</div>
+                    </div>
+
+                    <!-- Nivel 5: IA -->
+                    <div class="layer l5-ai">
+                        <div class="ai-sphere glass">
+                            <div class="ai-core"></div>
+                            <div class="ai-message">"Todo fluye bajo control, Alex."</div>
+                        </div>
+                        <div class="layer-tag">NIVEL 05</div>
+                    </div>
+                </div>
+
+                <!-- Paneles de Control (Derecha) -->
+                <div class="controls-panel">
+                    <img src="assets/logo.png" alt="Blin Logo" class="side-logo">
+
+                    <div class="card-stack">
+                        <!-- Step 1 Info -->
+                        <div class="info-card c1">
+                            <span class="step-num">01 / 05</span>
+                            <h2>Entorno Visual</h2>
+                            <p>El primer nivel es la base de <strong>alta resolución</strong>. Un motor gráfico que
+                                define la claridad visual y el confort del usuario mediante fondos dinámicos.</p>
+                            <label for="step-2" class="btn-primary">Siguiente Nivel →</label>
+                        </div>
+
+                        <!-- Step 2 Info -->
+                        <div class="info-card c2">
+                            <span class="step-num">02 / 05</span>
+                            <h2>Interfaz Shell</h2>
+                            <p>La capa de <strong>acceso rápido</strong>. El Dock y la Barra superior utilizan
+                                desenfoque inteligente para que el sistema se sienta ligero pero presente.</p>
+                            <div class="btn-group">
+                                <label for="step-1" class="btn-secondary">Atrás</label>
+                                <label for="step-3" class="btn-primary">Siguiente →</label>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Info -->
+                        <div class="info-card c3">
+                            <span class="step-num">03 / 05</span>
+                            <h2>Multi-Usuario</h2>
+                            <p>Gestión visual de permisos. Cambia entre perfiles <strong>al instante</strong>. Fíjate en
+                                los permisos: ✓ (Permitido) y ✕ (Restringido).</p>
+                            <div class="btn-group">
+                                <label for="step-2" class="btn-secondary">Atrás</label>
+                                <label for="step-4" class="btn-primary">Siguiente →</label>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Info -->
+                        <div class="info-card c4">
+                            <span class="step-num">04 / 05</span>
+                            <h2>Espacio de Trabajo</h2>
+                            <p>Multitarea con <strong>profundidad real</strong>. Las ventanas flotan y guardan su estado
+                                independientemente de qué usuario esté activo.</p>
+                            <div class="btn-group">
+                                <label for="step-3" class="btn-secondary">Atrás</label>
+                                <label for="step-5" class="btn-primary">Siguiente →</label>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 Info -->
+                        <div class="info-card c5">
+                            <span class="step-num">05 / 05</span>
+                            <h2>Motor de IA</h2>
+                            <p>El núcleo de todo. <strong>Blin Intelligence</strong> analiza cada capa para ofrecerte
+                                una experiencia proactiva y personalizada.</p>
+                            <div class="btn-group">
+                                <label for="step-4" class="btn-secondary">Atrás</label>
+                                <label for="step-1" class="btn-primary">Reiniciar Tour</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
