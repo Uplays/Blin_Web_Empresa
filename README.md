@@ -45,7 +45,7 @@ Blin_Web_Empresa/
 
 ```
 
-## ⚙️ Instalación y Uso Local
+##  Instalación y Uso Local
 
 Si deseas clonar este proyecto para realizar pruebas locales o desarrollo:
 
@@ -65,7 +65,7 @@ cd Blin_Web_Empresa
 
 3. **Abre el archivo `index.html**` en tu navegador preferido.
 
-## 📄 Licencia
+##  Licencia
 
 Este proyecto es de código abierto. Siéntete libre de usarlo como base para tus propios proyectos.
 
