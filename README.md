@@ -6,11 +6,11 @@ Aquí tienes una propuesta de archivo `README.md` para tu proyecto, basada en el
 
 Este repositorio contiene el código fuente de la página web oficial de **Blin**, una plataforma/empresa enfocada en soluciones digitales y servicios empresariales. El sitio ha sido diseñado para ofrecer una experiencia de usuario fluida, moderna y totalmente adaptativa (responsive).
 
-## 🚀 Demo
+##  Demo
 
 Puedes ver la web en funcionamiento aquí: [https://uplays.github.io/Blin_Web_Empresa/](https://uplays.github.io/Blin_Web_Empresa/)
 
-## 📋 Características
+##  Características
 
 * **Diseño Moderno:** Interfaz limpia utilizando tendencias actuales de UI/UX.
 * **Responsive Design:** Optimizado para dispositivos móviles, tablets y ordenadores de escritorio.
@@ -23,7 +23,7 @@ Puedes ver la web en funcionamiento aquí: [https://uplays.github.io/Blin_Web_Em
 
 * **Navegación Fluida:** Enlaces internos con scroll suave.
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 Para el desarrollo de esta web se han empleado las siguientes tecnologías:
 
@@ -33,7 +33,7 @@ Para el desarrollo de esta web se han empleado las siguientes tecnologías:
 * **Google Fonts:** Tipografía profesional para mejorar la legibilidad.
 * **Font Awesome:** Iconografía detallada.
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```bash
 Blin_Web_Empresa/
@@ -71,4 +71,4 @@ Este proyecto es de código abierto. Siéntete libre de usarlo como base para tu
 
 ---
 
-**Desarrollado por [uplays**](https://www.google.com/search?q=https://github.com/uplays)
+**Desarrollado por [SanchoPanza**](https://www.google.com/search?q=https://github.com/uplays)
